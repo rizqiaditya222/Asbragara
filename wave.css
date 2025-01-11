@@ -1,0 +1,205 @@
+.waveRed1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave1/wave.png');
+    background-size: 1000px 80px; 
+    animation: animate1 7s linear infinite;
+    animation-delay: 0s;
+}
+
+.waveRed2 {
+    position: absolute;
+    bottom: 1.5%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave1/yellow.png');
+    background-size: 1000px 80px; 
+    animation: animate2 7s linear infinite;
+    animation-delay: .5s;
+}
+
+.waveRed3 {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave1/orange.png');
+    background-size: 1000px 80px; 
+    animation: animate3 7s linear infinite;
+    animation-delay: 1s;
+}
+
+.waveRed4 {
+    position: absolute;
+    bottom: 4.5%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave1/red.png');
+    background-size: 1000px 80px;
+    animation: animate4 7s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.waveBottom1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave3/wave3.png');
+    background-size: 1000px 80px; 
+    animation: animateBottom1 7s linear infinite;
+    animation-delay: 0s;
+}
+
+.waveBottom2 {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave3/wave2.png');
+    background-size: 1000px 80px; 
+    animation: animateBottom2 7s linear infinite;
+    animation-delay: .5s;
+}
+
+.waveBottom3 {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave3/wave1.png');
+    background-size: 1000px 80px; 
+    animation: animateBottom3 7s linear infinite;
+    animation-delay: 1s;
+}
+
+.waveBottom4 {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave3/wave0.png');
+    background-size: 1000px 80px;
+    animation: animateBottom4 7s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.waveBlue2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave2/wave1.png');
+    background-size: 1000px 80px; 
+    animation: animate2 7s linear infinite;
+    animation-delay: .5s;
+}
+
+.waveBlue3 {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave2/wave2.png');
+    background-size: 1000px 80px; 
+    animation: animate3 7s linear infinite;
+    animation-delay: 1s;
+}
+
+.waveBlue4 {
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('wave2/wave3.png');
+    background-size: 1000px 80px;
+    animation: animate4 7s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate1 {
+    0% {
+        background-position-x: 0;
+        
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animateBottom1 {
+    0% {
+        background-position-x: 1000px;
+        
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateBottom2 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateBottom3 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateBottom4 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}

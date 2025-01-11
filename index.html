@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fish.css">
+    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="floating.css">
+    <link rel="stylesheet" href="appear.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    poppins: ['Poppins'],
+                },
+                
+                colors: {
+                    'white': '#f2f2f2',
+                    'blue' : '#457ABF',
+                    'lightBlue' : '#D1EEFF',
+                    'yellow' : '#F2D027',
+                    'darkBlue' : '#203959',
+                    'orange' : '#EB7D1A'
+                },
+
+                fontSize: {
+                    // '18' : '18rem',
+                }
+
+            }
+          }
+        }
+      </script>
+    <title>Asbragara</title>
+    <link rel="icon" href="logo/fix.png" type="image/x-icon">
+    <style>
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }   
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    #Home {
+        background-image: url('images/hero1.png');
+        animation: swap 20s infinite ease-in-out;
+        min-height: 120vh;
+    }
+    
+    @keyframes swap {
+        0% {
+            background-image: url('images/hero1.png');
+        }
+        33% {
+            background-image: url('images/hero2.png');
+        }
+        66% {
+            background-image: url('images/hero3.png');
+        }
+        100% {
+            background-image: url('images/hero1.png');
+        }
+    }
+    
+
+    </style>
+</head>
+<body class="font-poppins">
+    <section id="Home" class="min-h-screen relative pt-10 bg-cover bg-center">
+        <nav class="flex flex-nowrap flex-row mx-[5%]">
+            <div class="w-80 flex-grow">
+                <a href=""><img class="w-80" src="logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="flex w-1/3"> 
+                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-white ml-0 m-auto" href="#aboutus">About Us</a>
+                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-white m-auto" href="#programs">Programs</a>
+                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-white mr-0 m-auto" href="#contact">Contact Us</a>
+            </div>
+        </nav>
+        <img class="w-9/12 absolute inset-0 m-auto" src="ASBRAGARA.svg" alt="">
+        <div>
+            <div class="wave waveRed4"></div>
+            <div class="wave waveRed3"></div>
+            <div class="wave waveRed2"></div>
+            <div class="wave waveRed1"></div>
+        </div>
+    </section>
+    <section id="aboutus" class="relative bg-white"  style="scroll-margin-top: 150px;">
+        <div id="about" class="flex mx-[12.5%] pb-[15%] pt-[10%]" >
+            <div class="basis-1/3">
+                <img id="myLogo" class="w-auto" src="logo/fix.png" alt="">
+            </div>
+            <div class="ml-10 basis-2/3">
+                <img src="text/About Us.svg" class="w-72 mb-9" alt="">
+                <h2 class="text-3xl font-semibold tracking-widest my-3">Siapa Asbragara?</h2>
+                <p class="text-lg text-justify">Asbragara (Asosiasi Brawijaya Banjarnegara) adalah komunitas mahasiswa asal Banjarnegara, Jawa Tengah, yang dibentuk pada 16 Januari 2024. Komunitas ini menghimpun mahasiswa Universitas Brawijaya angkatan 2020-2024. Kegiatan pertama yang dilakukan adalah Sambang Sekolah dengan tema "Menjelajah Bumi Brawijaya."</p>
+                <a href="aboutUs.html" class="flex bg-yellow rounded-full w-48 h-10 font-medium text-xl tracking-widest mt-5 hover:text-white hover:bg-blue transition duration-20 ease-in-out" style="cursor: pointer; padding-left: 20px; ">
+                    <span style="padding-top: 5.5px;">
+                    See More 
+                    </span>
+                    <span class="ml-3 mb-0 font-bold text-3xl">&#8594;</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="wave waveBlue4"></div>
+            <div class="wave waveBlue3"></div>
+            <div class="wave waveBlue2"></div>
+        </div>
+    </section>
+    <section id="programs" class="relative bg-gradient-to-t from-darkBlue to-blue py-24 " style="min-height: 100vh;">
+        <div class="flex justify-center" >
+            <div id="wavyText" class="font-bold text-white text-5xl" style="z-index: 999;">
+                <span style="--i:1; text-shadow: 0px 0px 8px #D1EDFF;">O</span>
+                <span style="--i:2; text-shadow: 0px 0px 8px #D1EDFF;">u</span>
+                <span style="--i:3; text-shadow: 0px 0px 8px #D1EDFF;">r</span>
+                <span>&nbsp;</span>
+                <span style="--i:4; text-shadow: 0px 0px 8px #D1EDFF;">P</span>
+                <span style="--i:5; text-shadow: 0px 0px 8px #D1EDFF;">r</span>
+                <span style="--i:6; text-shadow: 0px 0px 8px #D1EDFF;">o</span>
+                <span style="--i:7; text-shadow: 0px 0px 8px #D1EDFF;">g</span>
+                <span style="--i:8; text-shadow: 0px 0px 8px #D1EDFF;">r</span>
+                <span style="--i:9; text-shadow: 0px 0px 8px #D1EDFF;">a</span>
+                <span style="--i:10; text-shadow: 0px 0px 8px #D1EDFF;">m</span>
+                <span style="--i:11; text-shadow: 0px 0px 8px #D1EDFF;">s</span>
+            </div>
+        </div>
+        <div id="subWavy1" class="mt-4 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+            <span style="--i:1;">S</span>
+            <span style="--i:2;">a</span>
+            <span style="--i:3;">m</span>
+            <span style="--i:4;">b</span>
+            <span style="--i:5;">a</span>
+            <span style="--i:6;">n</span>
+            <span style="--i:7;">g</span>
+            <span>&nbsp;</span>
+            <span style="--i:8;">S</span>
+            <span style="--i:9;">e</span>
+            <span style="--i:10;">k</span>
+            <span style="--i:11;">o</span>
+            <span style="--i:11;">l</span>
+            <span style="--i:11;">a</span>
+            <span style="--i:11;">h</span>
+        </div>
+        <div class="slider">
+            <div class="slide-track2">
+                <div class="slide2">
+                    <img class="imageScroll" src="sosil/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/6.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/7.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/8.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/9.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/10.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/11.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/12.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/6.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/7.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/8.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/9.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/10.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/11.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="sosil/12.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="subWavy1" class="mt-10 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" style="z-index: 999;">
+            <span style="--i:1;">B</span>
+            <span style="--i:2;">e</span>
+            <span style="--i:3;">r</span>
+            <span style="--i:4;">m</span>
+            <span style="--i:5;">a</span>
+            <span style="--i:6;">i</span>
+            <span style="--i:7;">n</span>
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/6.png" alt="">
+                </div>
+                <!-- Duplicate slides for seamless scrolling -->
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imageScroll" src="bermain/6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="ikan ikan-1"></div>
+            <!-- <div class="ikan ikan0"></div> -->
+            <div class="ikan ikan1"></div>
+            <div class="ikan ikan2"></div>
+            <div class="ikan ikan3"></div>
+            <div class="ikan ikan4"></div>
+            <div class="ikan ikan5"></div>
+            <div class="ikan ikan6"></div>
+            <div class="ikan ikan7"></div>
+            <div class="ikan ikan8"></div>
+            <div class="ikan ikan9"></div>
+            <div class="ikan ikan10"></div>
+            <div class="ikan ikan11"></div>
+            <div class="ikan ikan12"></div>
+            <div class="ikan ikan13"></div>
+            <div class="ikan ikan14"></div>
+        </div>
+    </section>
+    <section class="relative bg-white" id="footer" style="min-height: 60vh;">
+        <div>
+            <div class="wave waveBottom4"></div>
+            <div class="wave waveBottom3"></div>
+            <div class="wave waveBottom2"></div>
+            <div class="wave waveBottom1"></div>
+        </div>
+        <div id="contact" class="flex pt-44 pb-10 px-48 items-center">
+            <div class="w-2/3">
+                <img src="text/Connect With Us.svg" alt="">
+                <p class="tracking-wider my-7 w-4/5 text-lg">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
+                <p class="font-bold text-orange text-2xl mb-3">Contact us :</p>
+                <a href="https://www.instagram.com/asbragara/" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
+                    <img src="icon/instagram-1-svgrepo-com 1.svg" class="w-12 mr-2" style="margin-left: -3px;" alt="">
+                    <p>@asbragrara</p>
+                </a>
+                <a href="mailto:asbragara@gmail.com" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
+                    <img src="icon/gmail-svgrepo-com.svg" class="w-10 mr-2" style="margin-left: -4px;" alt="">
+                    <p>asbragara@gmail.com</p>
+                </a>
+            </div>
+            <div  class="w-1/3 h-auto" >
+                <img class="h-auto" src="logo/fix.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="flex justify-center w-full">
+            <div class="w-5/6" style="background-color: black; height: 2px;"></div>
+        </div>
+        <p class="pt-5 text-center font-medium tracking-widest text-base">ASOSIASI BRAWIJAYA BANJARNEGARA</p> -->
+    </section>
+    
+    
+</body>
+</html>

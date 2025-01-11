@@ -1,0 +1,66 @@
+
+#about {
+    animation: appearLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#contact {
+    animation: appearRight linear;
+    animation-timeline: view();
+    animation-range: entry -20% cover 40%;
+}
+
+#myConnect {
+    animation: appearLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#awan, #gunungan {
+    animation: appearLeft linear;
+    animation-timeline: view();
+    animation-range: entry -20% cover 50%;
+}
+
+#wayang {
+    animation: appearRight linear;
+    animation-timeline: view();
+    animation-range: entry -20% cover 50%;
+}
+
+#filosofi{
+    animation: appearBottom linear;
+    animation-timeline: view();
+    animation-range: entry -20% cover 50%;
+
+}
+
+@keyframes appearLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appearRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes appearBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
