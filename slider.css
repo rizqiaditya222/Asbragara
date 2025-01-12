@@ -73,7 +73,7 @@
         transform: translateX(-0px);
     }
     100% {
-        transform: translateX(-1800px); /* Adjust this to account for all images */
+        transform: translateX(-2400px); /* Adjust this to account for all images */
     }
 }
 
