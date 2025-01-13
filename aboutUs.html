@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="appear.css">
     <link rel="stylesheet" href="wave.css">
     <link rel="stylesheet" href="fish2.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -44,35 +45,36 @@
         }
 
         body::-webkit-scrollbar {
-            display: none; /* Hides scrollbar */
+            display: none;
         }
+
     </style>
 </head>
 <body class="font-poppins">
     
-    <section id="Home" class="relative pt-10 bg-white">
+    <section id="" class="relative pt-10 bg-white">
         <nav class="flex flex-nowrap flex-row mx-[5%]">
             <div class="flex-grow">
                 <a href="index.html"><img class="w-36 sm:w-40 md:w-60 xl:w-72 2xl:w-80" src="logo/logoBlack.webp" alt="logo"></a>
             </div>
-            <div class="flex w-1/3"> 
-                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-black ml-0 m-auto" href="index.html">Home</a>
-                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-black m-auto" href="">Members</a>
-                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-black mr-0 m-auto" href="">Contact Us</a>
+            <div class="flex w-1/2 md:w-1/3 items-center"> 
+                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-black ml-0 m-auto" href="#aboutus">About Us</a>
+                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-black m-auto" href="#programs">Programs</a>
+                <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-black mr-0 m-auto" href="#contact">Contact Us</a>
             </div>
         </nav>
     </section>
 
-    <section class="flex flex-col items-center bg-white pt-24">
+    <section class="flex flex-col items-center bg-white pt-10 md:pt-24">
         <div class="">
-            <img src="Letters/Siapa Asbragara_.svg" class="h-12 mb-9" alt="About Us">
+            <img src="Letters/Siapa Asbragara_.svg" class="h-12 mb-0 lg:mb-9 w-72 md:w-96 lg:w-auto" alt="About Us">
         </div>
-        <div class=" flex mx-[12.5%] mt-0 items-center">
-            <div class="w-1/3">
+        <div class="flex flex-col lg:flex-row   mx-[12.5%] lg:mx-[5%] xl:mx-[12.5%] mt-0 items-center">
+            <div class="w-1/3 max-w-96 min-w-72">
                 <img src="logo/fix.webp" alt="Asbragara Logo">
             </div>
-            <div class="w-2/3">
-                <p class="text-lg text-justify">
+            <div class=" w-full">
+                <p class="text-xs md:text-base lg:text-lg text-justify">
                     Asbragara atau Asosiasi Brawijaya Banjarnegara merupakan suatu komunitas mahasiswa yang berasal dari Banjarnegara, Jawa Tengah. Komunitas ini resmi dibentuk atas dasar rasa peduli satu sama lain untuk saling membantu dan saling berbagi informasi pada 16 Januari 2024.
                     <br><br>
                     Saat ini Asbragara menghimpun mahasiswa Universitas Brawijaya dari Banjarnegara dari angkatan 2020 - 2024 dan akan terus bertambah. Kegiatan pertama yang dilakukan komunitas ini ialah Sambang Sekolah dengan tema Menjelajah Bumi Brawijaya.
@@ -82,29 +84,29 @@
             </div>
         </div>
     </section>
-    <section class="relative flex flex-col items-center bg-white pt-44 pb-40">
+    <section class="relative flex flex-col items-center bg-white pt-16 md:pt-20 pb-40">
         <div id="filosofi">
-            <img src="Letters/Filosofi Logo.svg" class="h-12 mb-9" alt="About Us">
+            <img src="Letters/Filosofi Logo.svg" class="h-12 mb-9 w-60 lg:w-auto" alt="About Us">
         </div>
         <div id="awan" class=" flex mx-[12.5%] mt-0 items-center">
             <div class="w-4/5 flex flex-col items-start">
-                <p class="font-semibold text-orange text-4xl tracking-widest">Awan</p>
-                <p class="text-lg text-justify w-11/12 tracking-widest" style="">
+                <p class="font-bold text-orange text-base md:text-2xl lg:text-4xl tracking-widest">Awan</p>
+                <p class="text-xs md:text-sm lg:text-lg text-justify w-11/12 lg:tracking-widest">
                     Awan biru yang menutupi wayang dan Raden Wijaya melambangkan salah satu tempat di Banjarnegara yang dijuluki “Negeri di Atas Awan” yaitu Dieng.
                 </p>
             </div>
-            <div class="w-72" style="margin: 0px -15px;">
+            <div class="w-auto lg:w-72" style="margin: 0px -15px;">
                 <img src="logo/awan 1.svg" alt="Asbragara Logo">
             </div>
         </div>
 
         <div id="wayang" class="flex mx-[12.5%] mt-10 items-center">
-            <div class="w-80" style="margin: 0px -25px">
+            <div class="w-auto lg:w-80" style="margin: 0px -25px">
                 <img src="logo/wayang 1.png" alt="Asbragara Logo">
             </div>
             <div class="w-4/5 flex flex-col items-end">
-                <p class="font-semibold text-orange text-4xl tracking-widest text-right">Siluet Tokoh</p>
-                <p class="text-lg text-justify w-11/12 tracking tracking-widest">
+                <p class="font-bold text-orange text-base md:text-2xl lg:text-4xl tracking-widest text-right">Siluet Tokoh</p>
+                <p class="text-xs md:text-sm lg:text-lg text-justify w-11/12 lg:tracking-widest">
                     Tokoh Raden Wijaya (Prabu Brawijaya) yang berada di atas wayang melambangkan  bahwa komunitas ini berasal dari Universitas Brawijaya. Tokoh wayang Semar dan Gareng yang berada di bawah  Raden Wijaya merupakan ikon dari Banjarnegara melalui minuman khasnya yaitu dawet ayu.
                 </p>
             </div>
@@ -112,12 +114,12 @@
         
         <div id="gunungan" class="flex mx-[12.5%] mt-10 items-center">
             <div class="w-4/5 flex flex-col items-start">
-                <p class="font-semibold text-orange text-4xl tracking-widest">Gunungan</p>
-                <p class="text-lg text-justify w-11/12 tracking-widest">
+                <p class="font-bold text-orange text-base md:text-2xl lg:text-4xl tracking-widest">Gunungan</p>
+                <p class="text-xs md:text-sm lg:text-lg text-justify w-11/12 lg:tracking-widest">
                     Gunungan menjadi suatu simbol yang mengingatkan mahasiswa akan pentingnya keseimbangan dunia akademik dan kehidupan sosial. Gunungan juga menjadi suatu simbol yang memberi insipirasi dan motivasi untuk terus bekerja sama, berkembang, dan saling menghargai keberagaman.
                 </p>
             </div>
-            <div class="w-72">
+            <div class="w-auto lg:w-72" style="margin: 0px -15px;">
                 <img src="logo/gunungan 1.png" alt="Asbragara Logo">
             </div>
         </div>
@@ -129,9 +131,9 @@
         </div>
     </section>
 
-    <section id="programs" class="relative bg-gradient-to-t from-darkBlue to-blue py-24 " style="min-height: 100vh;">
+    <section id="programs" class="relative bg-gradient-to-t from-darkBlue to-blue py-10 lg:py-24 " style="min-height: 100vh;">
         <div class="flex justify-center" >
-            <div id="wavyText" class="font-bold text-white text-5xl" style="z-index: 999;">
+            <div id="wavyText" class="font-bold text-white text-3xl md:text-4xl lg:text-5xl" style="z-index: 999;">
                 <span style="--i:1; text-shadow: 0px 0px 8px #D1EDFF;">M</span>
                 <span style="--i:2; text-shadow: 0px 0px 8px #D1EDFF;">e</span>
                 <span style="--i:2; text-shadow: 0px 0px 8px #D1EDFF;">e</span>
@@ -144,7 +146,7 @@
 
         <!-- ANGKATAN 22 -->
 
-        <div id="subWavy1" class="mt-4 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+        <div id="subWavy1" class="mt-4 flex justify-center font-extrabold tracking-widest text-2xl md:text-3xl lg:text-4xl text-yellow" >
             <span style="--i:1;">A</span>
             <span style="--i:2;">n</span>
             <span style="--i:3;">g</span>
@@ -159,7 +161,7 @@
             <span style="--i:10;">2</span>
             <span style="--i:10;">2</span>
         </div>
-        <div class="card grid grid-cols-3 place-items-center mt-10 mx-96">
+        <div id="cardLeft" class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/ara.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/ica.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/lulu.png" alt="" style="border-radius: 20px; ;"></a>
@@ -167,7 +169,7 @@
 
         <!-- ANGKATAN 23 -->
         
-        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-2xl md:text-3xl lg:text-4xl text-yellow" >
             <span style="--i:1;">A</span>
             <span style="--i:2;">n</span>
             <span style="--i:3;">g</span>
@@ -182,17 +184,17 @@
             <span style="--i:10;">2</span>
             <span style="--i:10;">3</span>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/arya.png" alt="" style="border-radius: 20px;"></a>
             <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/amel.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/ilham.png" alt="" style="border-radius: 20px; ;"></a>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:1.5;"><img class="w-60" src="card/hasya.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/damai.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/adit.png" alt="" style="border-radius: 20px; ;"></a>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/tsaqif.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/galan.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:4;"><img class="w-60" src="card/nirma.png" alt="" style="border-radius: 20px; ;"></a>
@@ -200,7 +202,7 @@
         </div>  
         <!-- ANGKATAN 24 -->
         
-        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-2xl lg:text-3xl md:text-4xl text-yellow" >
             <span style="--i:1;">A</span>
             <span style="--i:2;">n</span>
             <span style="--i:3;">g</span>
@@ -215,22 +217,22 @@
             <span style="--i:10;">2</span>
             <span style="--i:10;">4</span>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/dini.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/benita.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/bilqis.png" alt="" style="border-radius: 20px; ;"></a>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">                
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">                
             <a class="cardImg" href="" style="--i:1.5;"><img class="w-60" src="card/tifa.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/vava.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/awalia.png" alt="" style="border-radius: 20px; ;"></a>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/fadhil.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/vika.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:4;"><img class="w-60" src="card/naura.png" alt="" style="border-radius: 20px; ;"></a>
         </div>
-        <div class="card flex justify-around mt-10 mx-96">
+        <div class="card grid grid-cols-3 place-items-center mt-5 lg:mt-10 mx-3 lg:mx-[20%]">
             <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/elen.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/alifah.png" alt="" style="border-radius: 20px; ;"></a>
             <a class="cardImg" href="" style="--i:4.5;"><img class="w-60" src="card/fatin.png" alt="" style="border-radius: 20px; ;"></a>
@@ -277,38 +279,35 @@
             <div class="wave waveBottom2"></div>
             <div class="wave waveBottom1"></div>
         </div>
-        <div id="contact" class="flex pt-44 pb-10 px-48 items-center">
-            <div class="w-2/3">
-                <img src="text/Connect With Us.svg" alt="">
-                <p class="tracking-wider my-7 w-4/5 text-lg text-justify">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
-                <div class="flex">
-                    <div class="w-1/2">
+        <div id="contact" class="flex flex-col items-center lg:flex-row pt-44 pb-10 px-5 lg:px-40">
+            <div class="lg:w-2/3 place-items-center lg:place-items-start">
+                <img class="w-80 min-w-20" src="text/Connect With Us.svg" alt="">
+                <p class="tracking-wider my-7 w-2/3 lg:w-4/5 text-sm lg:text-lg text-center lg:text-justify">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
+                <div class="flex-row lg:flex lg:w-full ">
+                    <div class="w-full lg:w-1/2 place-items-center lg:place-items-start">
                         <p class="font-bold text-orange text-2xl mb-3">Contact us :</p>
                         <a href="https://www.instagram.com/asbragara/" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
-                            <img src="icon/instagram-1-svgrepo-com 1.svg" class="w-12 mr-2" style="margin-left: -3px;" alt="">
+                            <img src="icon/instagram-1-svgrepo-com 1.svg" class="icon w-12 mr-2" alt="">
                             <p>@asbragrara</p>
                         </a>
                         <a href="mailto:asbragara@gmail.com" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
-                            <img src="icon/gmail-svgrepo-com.svg" class="w-10 mr-2" style="margin-left: -4px;" alt="">
+                            <img src="icon/gmail-svgrepo-com.svg" class="icon w-10 mr-2" alt="">
                             <p>asbragara@gmail.com</p>
                         </a>
                     </div>
-                    <div class="w-1/2">
+                    <div class="w-full lg:w-1/2 place-items-center lg:place-items-start my-5 lg:my-0">
                         <p class="font-bold text-orange text-2xl mb-3">Resource :</p>
                         <a href="https://drive.google.com/drive/folders/1ee-reyF1nkXV0rqxKaSUZEVs4rbaimzm" target="_blank" class="flex items-center hover:text-blue hover:underline w-min" style="margin-left: 3px;">
-                            <img src="icon/ppt-document-svgrepo-com.svg" class="w-8 mr-2" style="margin-left: -4px;" alt="">
+                            <img src="icon/ppt-document-svgrepo-com.svg" class="icon w-8 mr-2" alt="">
                             <p>PPT&nbsp;Sosialisasi</p>
                         </a>
                     </div>
                 </div>
             </div>
             <div  class="w-1/3 h-auto" >
-                <img class="h-auto" src="logo/fix.webp" alt="">
+                <img class="h-auto max-h-96" src="logo/fix.webp" alt="">
             </div>
         </div>
-
     </section>
-    
-
 </body>
 </html>

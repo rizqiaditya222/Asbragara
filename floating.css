@@ -8,7 +8,7 @@
     display: inline-block;
     animation: wavy1 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
-    text-shadow: 0 0 6px #91b5df;
+    text-shadow: 0 0 10px #91b5df;
     z-index: 999;
 }
 
@@ -40,12 +40,38 @@
     box-shadow: 0px 0px 20px #FFEA00;
 }
 
+@media (min-width: 768px) {
+
+    @keyframes wavy1{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-15px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    @keyframes wavy{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+}
+
 @keyframes wavy1{
     0%{
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
     100%{
         transform: translateY(0px);
@@ -56,7 +82,7 @@
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
     100%{
         transform: translateY(0px);

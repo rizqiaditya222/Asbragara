@@ -1,40 +1,31 @@
+@media (min-width: 1024px){
+    /* Left Appear Animation */
+    #about, 
+    #myConnect, 
+    #awan, 
+    #gunungan {
+        animation: appearLeft linear;
+        animation-timeline: view();
+        animation-range: entry -20% cover 50%;
+    }
 
-#about {
-    animation: appearLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
+    /* Right Appear Animation */
+    #contact, 
+    #wayang {
+        animation: appearRight linear;
+        animation-timeline: view();
+        animation-range: entry -20% cover 50%;
+    }
 
-#contact {
-    animation: appearRight linear;
-    animation-timeline: view();
-    animation-range: entry -20% cover 40%;
-}
-
-#myConnect {
-    animation: appearLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-#awan, #gunungan {
-    animation: appearLeft linear;
-    animation-timeline: view();
-    animation-range: entry -20% cover 50%;
-}
-
-#wayang {
-    animation: appearRight linear;
-    animation-timeline: view();
-    animation-range: entry -20% cover 50%;
-}
-
-#filosofi{
-    animation: appearBottom linear;
-    animation-timeline: view();
-    animation-range: entry -20% cover 50%;
+    /* Bottom Appear Animation */
+    #filosofi{
+        animation: appearBottom linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
 
 }
+
 
 @keyframes appearLeft {
     from {

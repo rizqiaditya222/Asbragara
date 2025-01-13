@@ -1,0 +1,26 @@
+.icon{
+    margin-left: -50px;
+}
+
+@media (min-width: 640px) {
+#Home{
+    min-height: 70vh;
+}
+}
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+#Home{
+    min-height: 80vh;
+}
+.icon{
+    margin-left: -3px;
+}
+}
+@media (min-width: 1280px) {
+#Home{
+    min-height: 120vh;
+}
+}
