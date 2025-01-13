@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="floating.css">
     <link rel="stylesheet" href="appear.css">
+    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="fish2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,7 +23,7 @@
                     'white': '#f2f2f2',
                     'blue' : '#457ABF',
                     'lightBlue' : '#D1EEFF',
-                    'yellow' : '#F2D027',
+                    'yellow' : '#FFEA00',
                     'darkBlue' : '#203959',
                     'orange' : '#EB7D1A'
                 },
@@ -36,13 +38,22 @@
       </script>
     <title>About Us</title>
     <link rel="icon" href="logo/fix.webp" type="image/x-icon">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+
+        body::-webkit-scrollbar {
+            display: none; /* Hides scrollbar */
+        }
+    </style>
 </head>
 <body class="font-poppins">
     
     <section id="Home" class="relative pt-10 bg-white">
         <nav class="flex flex-nowrap flex-row mx-[5%]">
             <div class="w-80 flex-grow">
-                <a href=""><img class="w-80" src="logo/logoBlack.webp" alt="logo"></a>
+                <a href="index.html"><img class="w-80" src="logo/logoBlack.webp" alt="logo"></a>
             </div>
             <div class="flex w-1/3"> 
                 <a class="hover:bg-blue hover:text-white rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base text-black ml-0 m-auto" href="#aboutus">About Us</a>
@@ -71,8 +82,7 @@
             </div>
         </div>
     </section>
-
-    <section class="flex flex-col items-center bg-white pt-44">
+    <section class="relative flex flex-col items-center bg-white pt-44 pb-40">
         <div id="filosofi">
             <img src="Letters/Filosofi Logo.svg" class="h-12 mb-9" alt="About Us">
         </div>
@@ -111,32 +121,194 @@
                 <img src="logo/gunungan 1.png" alt="Asbragara Logo">
             </div>
         </div>
+
+        <div>
+            <div class="wave waveBlue4"></div>
+            <div class="wave waveBlue3"></div>
+            <div class="wave waveBlue2"></div>
+        </div>
     </section>
 
-    <section class="bg-white" style="min-height: 100vh;">
+    <section id="programs" class="relative bg-gradient-to-t from-darkBlue to-blue py-24 " style="min-height: 100vh;">
+        <div class="flex justify-center" >
+            <div id="wavyText" class="font-bold text-white text-5xl" style="z-index: 999;">
+                <span style="--i:1; text-shadow: 0px 0px 8px #D1EDFF;">M</span>
+                <span style="--i:2; text-shadow: 0px 0px 8px #D1EDFF;">e</span>
+                <span style="--i:2; text-shadow: 0px 0px 8px #D1EDFF;">e</span>
+                <span style="--i:3; text-shadow: 0px 0px 8px #D1EDFF;">t</span>
+                <span>&nbsp;</span>
+                <span style="--i:4; text-shadow: 0px 0px 8px #D1EDFF;">U</span>
+                <span style="--i:5; text-shadow: 0px 0px 8px #D1EDFF;">s</span>
+            </div>
+        </div>
+
+        <!-- ANGKATAN 22 -->
+
+        <div id="subWavy1" class="mt-4 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+            <span style="--i:1;">A</span>
+            <span style="--i:2;">n</span>
+            <span style="--i:3;">g</span>
+            <span style="--i:4;">k</span>
+            <span style="--i:5;">a</span>
+            <span style="--i:6;">t</span>
+            <span style="--i:7;">a</span>
+            <span style="--i:7;">n</span>
+            <span>&nbsp;</span>
+            <span style="--i:8;">2</span>
+            <span style="--i:9;">0</span>
+            <span style="--i:10;">2</span>
+            <span style="--i:10;">2</span>
+        </div>
+        <div class="card grid grid-cols-3 place-items-center mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/ara.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/ica.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/lulu.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+
+        <!-- ANGKATAN 23 -->
+        
+        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+            <span style="--i:1;">A</span>
+            <span style="--i:2;">n</span>
+            <span style="--i:3;">g</span>
+            <span style="--i:4;">k</span>
+            <span style="--i:5;">a</span>
+            <span style="--i:6;">t</span>
+            <span style="--i:7;">a</span>
+            <span style="--i:7;">n</span>
+            <span>&nbsp;</span>
+            <span style="--i:8;">2</span>
+            <span style="--i:9;">0</span>
+            <span style="--i:10;">2</span>
+            <span style="--i:10;">3</span>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/arya.png" alt="" style="border-radius: 20px;"></a>
+            <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/amel.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/ilham.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:1.5;"><img class="w-60" src="card/hasya.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/damai.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/adit.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/tsaqif.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/galan.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:4;"><img class="w-60" src="card/nirma.png" alt="" style="border-radius: 20px; ;"></a>
+
+        </div>  
+        <!-- ANGKATAN 24 -->
+        
+        <div id="subWavy1" class="mt-16 flex justify-center font-extrabold tracking-widest text-4xl text-yellow" >
+            <span style="--i:1;">A</span>
+            <span style="--i:2;">n</span>
+            <span style="--i:3;">g</span>
+            <span style="--i:4;">k</span>
+            <span style="--i:5;">a</span>
+            <span style="--i:6;">t</span>
+            <span style="--i:7;">a</span>
+            <span style="--i:7;">n</span>
+            <span>&nbsp;</span>
+            <span style="--i:8;">2</span>
+            <span style="--i:9;">0</span>
+            <span style="--i:10;">2</span>
+            <span style="--i:10;">4</span>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:1;"><img class="w-60" src="card/dini.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/benita.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/bilqis.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">                
+            <a class="cardImg" href="" style="--i:1.5;"><img class="w-60" src="card/tifa.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/vava.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/awalia.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:2;"><img class="w-60" src="card/fadhil.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3;"><img class="w-60" src="card/vika.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:4;"><img class="w-60" src="card/naura.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+        <div class="card flex justify-around mt-10 mx-96">
+            <a class="cardImg" href="" style="--i:2.5;"><img class="w-60" src="card/elen.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:3.5;"><img class="w-60" src="card/alifah.png" alt="" style="border-radius: 20px; ;"></a>
+            <a class="cardImg" href="" style="--i:4.5;"><img class="w-60" src="card/fatin.png" alt="" style="border-radius: 20px; ;"></a>
+        </div>
+
+        <div>
+            <div class="ikan ikan-1"></div>
+            <div class="ikan ikan1"></div>
+            <div class="ikan ikan2"></div>
+            <div class="ikan ikan3"></div>
+            <div class="ikan ikan4"></div>
+            <div class="ikan ikan5"></div>
+            <div class="ikan ikan6"></div>
+            <div class="ikan ikan7"></div>
+            <div class="ikan ikan8"></div>
+            <div class="ikan ikan9"></div>
+            <div class="ikan ikan10"></div>
+            <div class="ikan ikan11"></div>
+            <div class="ikan ikan12"></div>
+            <div class="ikan ikan13"></div>
+            <div class="ikan ikan14"></div>
+            <div class="ikan ikan15"></div>
+            <div class="ikan ikan16"></div>
+            <div class="ikan ikan17"></div>
+            <div class="ikan ikan18"></div>
+            <div class="ikan ikan19"></div>
+            <div class="ikan ikan20"></div>
+            <div class="ikan ikan21"></div>
+            <div class="ikan ikan22"></div>
+            <div class="ikan ikan23"></div>
+            <div class="ikan ikan24"></div>
+            <div class="ikan ikan25"></div>
+            <div class="ikan ikan26"></div>
+            <div class="ikan ikan27"></div>
+            <div class="ikan ikan28"></div>
+            <div class="ikan ikan29"></div>
+        </div>
+    </section>
+
+    <section class="relative bg-white" id="footer" style="min-height: 60vh;">
+        <div>
+            <div class="wave waveBottom4"></div>
+            <div class="wave waveBottom3"></div>
+            <div class="wave waveBottom2"></div>
+            <div class="wave waveBottom1"></div>
+        </div>
+        <div id="contact" class="flex pt-44 pb-10 px-48 items-center">
+            <div class="w-2/3">
+                <img src="text/Connect With Us.svg" alt="">
+                <p class="tracking-wider my-7 w-4/5 text-lg text-justify">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
+                <div class="flex">
+                    <div class="w-1/2">
+                        <p class="font-bold text-orange text-2xl mb-3">Contact us :</p>
+                        <a href="https://www.instagram.com/asbragara/" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
+                            <img src="icon/instagram-1-svgrepo-com 1.svg" class="w-12 mr-2" style="margin-left: -3px;" alt="">
+                            <p>@asbragrara</p>
+                        </a>
+                        <a href="mailto:asbragara@gmail.com" target="_blank" class="flex items-center hover:text-blue hover:underline w-min">
+                            <img src="icon/gmail-svgrepo-com.svg" class="w-10 mr-2" style="margin-left: -4px;" alt="">
+                            <p>asbragara@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="w-1/2">
+                        <p class="font-bold text-orange text-2xl mb-3">Resource :</p>
+                        <a href="https://www.canva.com/design/DAGbrJ4kIYM/MVIfKl-nY-IVnuAABvW-GQ/edit" target="_blank" class="flex items-center hover:text-blue hover:underline w-min" style="margin-left: 3px;">
+                            <img src="icon/ppt-document-svgrepo-com.svg" class="w-8 mr-2" style="margin-left: -4px;" alt="">
+                            <p>PPT&nbsp;Sosialisasi</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div  class="w-1/3 h-auto" >
+                <img class="h-auto" src="logo/fix.webp" alt="">
+            </div>
+        </div>
 
     </section>
     
-    <section class="relative bg-gradient-to-t from-darkBlue to-blue" id="footer" style="min-height: 60vh;">
-        <div id="myConnect" class="flex pt-44 pb-10 px-48 items-center">
-            <div class="w-2/3">
-                <p id="headlineAU" class="text-white font-bold tracking-widest text-5xl" style="text-shadow: 0px 0px 8px #D1EDFF;">Connect With Us</p>
-                <p class="tracking-wider my-7 text-lg text-white">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
-                <p class="font-bold text-orange text-2xl mb-3 text-yellow">Contact us :</p>
-                <a href="https://www.instagram.com/asbragara/" target="_blank" class="flex items-center hover:text-yellow hover:underline w-min">
-                    <img src="icon/instagram-1-svgrepo-com 1.svg" class="w-12 mr-2" style="margin-left: -3px;" alt="">
-                    <p class="text-white">@asbragrara</p>
-                </a>
-                <a href="mailto:asbragara@gmail.com" target="_blank" class="flex items-center hover:text-yellow hover:underline w-min">
-                    <img src="icon/gmail-svgrepo-com.svg" class="w-10 mr-2" style="margin-left: -4px;" alt="">
-                    <p class="text-white">asbragara@gmail.com</p>
-                </a>
-            </div>
-            <div class="w-1/3 h-auto" >
-                <img id="" class="h-auto"  src="logo/fix.webp" alt="">
-            </div>
-        </div>
-    </section>
 
 </body>
 </html>

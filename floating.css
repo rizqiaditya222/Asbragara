@@ -8,21 +8,36 @@
     display: inline-block;
     animation: wavy1 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
-    /* -webkit-text-stroke: 1px #598DCA;  */
     text-shadow: 0 0 6px #91b5df;
     z-index: 999;
 }
 
-@keyframes wavy{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-30px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+.card a{
+    display: inline-block;
+    animation: wavy1 2s ease-in-out infinite;
+    animation-delay: calc(.3s * var(--i));
+    z-index: 999;
+}
+
+.card {
+    width: 100%
+    overflow: hidden;
+}
+
+.cardImg{
+    perspective: 100px;
+}
+
+.cardImg img{
+    box-shadow: 0px 0px 20px #D1EDFF;
+    border-radius: 25px;
+    transition: box-shadow .5s, transform .5s;
+}
+
+.cardImg img:hover {
+    transform: translateZ(15px);
+    z-index: 999;
+    box-shadow: 0px 0px 20px #FFEA00;
 }
 
 @keyframes wavy1{
@@ -36,6 +51,18 @@
         transform: translateY(0px);
     }
 }
+@keyframes wavy{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 
 #myLogo, #headlineAU, #myLogo2{
     animation: animateLogo 5s linear infinite;

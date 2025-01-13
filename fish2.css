@@ -1,0 +1,403 @@
+.ikan {
+    position: absolute;
+    background: url('cosmetic/fish.svg');
+    z-index: 0;
+}
+
+.ikan-1{
+    opacity: .4;   
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 4s linear infinite;
+}
+.ikan0{
+    opacity: .7;   
+    top: 9%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 6s linear infinite;
+}
+.ikan1{
+    opacity: .8;   
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    background-size: 1000px 30px;
+    animation: animateFish 7s linear infinite;
+}
+.ikan2{
+    opacity: .6;   
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background-size: 1000px 40px;
+    animation: animateFish 6s linear infinite;
+}
+.ikan3{
+    opacity: .7;   
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 25px; 
+    background-size: 1000px 25px;
+    animation: animateFish 5s linear infinite;
+}
+
+.ikan4{
+    opacity: .8;   
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 20px; 
+    background-size: 1000px 20px;
+    animation: animateFish 6.5s linear infinite;
+}
+.ikan5{
+    opacity: .6;   
+    top: 19%;
+    left: 0;
+    width: 100%;
+    height: 25px; 
+    background-size: 1000px 25px;
+    animation: animateFish 5.5s linear infinite;
+}
+.ikan6{
+    opacity: .6;   
+    top: 27%;
+    left: 0;
+    width: 100%;
+    height: 22px; 
+    background-size: 1000px 22px;
+    animation: animateFish 7s linear infinite;
+}
+.ikan9{
+    opacity: .4;   
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 9s linear infinite;
+}
+.ikan10{
+    opacity: .3;   
+    top: 36%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 5s linear infinite;
+}
+.ikan7{
+    opacity: .7;   
+    top: 42%;
+    left: 0;
+    width: 100%;
+    height: 27px; 
+    background-size: 1000px 27px;
+    animation: animateFish2 7s linear infinite;
+}
+.ikan8{
+    opacity: .8;   
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    background-size: 1000px 30px;
+    animation: animateFish2 9s linear infinite;
+}
+.ikan11{
+    opacity: .6;   
+    top: 66%;
+    left: 0;
+    width: 100%;
+    height: 28px; 
+    background-size: 1000px 28px;
+    animation: animateFish2 9s linear infinite;
+}
+.ikan12{
+    opacity: .4;   
+    top: 72%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish2 4s linear infinite;
+}
+.ikan13{
+    opacity: .8;   
+    top: 72%;
+    left: 0;
+    width: 100%;
+    height: 28px; 
+    background-size: 1000px 28px;
+    animation: animateFish2 4s linear infinite;
+}
+.ikan-2{
+    opacity: .5;   
+    top: 92%;
+    left: 0;
+    width: 100%;
+    height: 21px; 
+    background-size: 1000px 21px;
+    animation: animateFish2 5s linear infinite;
+}
+
+
+/* scnd phase */
+.ikan14{
+    opacity: .4;   
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 4s linear infinite;
+}
+.ikan15{
+    opacity: .7;   
+    top: 82%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 6s linear infinite;
+}
+.ikan16{
+    opacity: .8;   
+    top: 93%;
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    background-size: 1000px 30px;
+    animation: animateFish 7s linear infinite;
+}
+.ikan17{
+    opacity: .6;   
+    top: 97%;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background-size: 1000px 40px;
+    animation: animateFish 6s linear infinite;
+}
+.ikan18{
+    opacity: .7;   
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 25px; 
+    background-size: 1000px 25px;
+    animation: animateFish 5s linear infinite;
+}
+
+.ikan19{
+    opacity: .6;   
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 20px; 
+    background-size: 1000px 20px;
+    animation: animateFish 5s linear infinite;
+}
+.ikan20{
+    opacity: .6;   
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 25px; 
+    background-size: 1000px 25px;
+    animation: animateFish 5.5s linear infinite;
+}
+.ikan21{
+    opacity: .6;   
+    top: 42%;
+    left: 0;
+    width: 100%;
+    height: 22px; 
+    background-size: 1000px 22px;
+    animation: animateFish 7s linear infinite;
+}
+.ikan22{
+    opacity: .4;   
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 9s linear infinite;
+}
+.ikan23{
+    opacity: .3;   
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish 5s linear infinite;
+}
+.ikan24{
+    opacity: .7;   
+    top: 63%;
+    left: 0;
+    width: 100%;
+    height: 27px; 
+    background-size: 1000px 27px;
+    animation: animateFish2 7s linear infinite;
+}
+.ikan25{
+    opacity: .8;   
+    top: 92%;
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    background-size: 1000px 30px;
+    animation: animateFish2 6s linear infinite;
+}
+.ikan26{
+    opacity: .6;   
+    top: 65%;
+    left: 0;
+    width: 100%;
+    height: 23px; 
+    background-size: 1000px 23px;
+    animation: animateFish2 6s linear infinite;
+}
+.ikan27{
+    opacity: .4;   
+    top: 55%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish2 4s linear infinite;
+}
+.ikan28{
+    opacity: .8;   
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 28px; 
+    background-size: 1000px 28px;
+    animation: animateFish2 7.5s linear infinite;
+}
+.ikan29{
+    opacity: .5;   
+    top: 73%;
+    left: 0;
+    width: 100%;
+    height: 21px; 
+    background-size: 1000px 21px;
+    animation: animateFish2 5s linear infinite;
+}
+.ikan30{
+    opacity: .7;   
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 27px; 
+    background-size: 1000px 27px;
+    animation: animateFish2 4.5s linear infinite;
+}
+.ikan31{
+    opacity: .5;   
+    top: 84%;
+    left: 0;
+    width: 100%;
+    height: 22px; 
+    background-size: 1000px 22px;
+    animation: animateFish2 10s linear infinite;
+}
+.ikan32{
+    opacity: .3;   
+    top: 89%;
+    left: 0;
+    width: 100%;
+    height: 23px; 
+    background-size: 1000px 23px;
+    animation: animateFish2 7s linear infinite;
+}
+.ikan33{
+    opacity: .4;   
+    top: 94%;
+    left: 0;
+    width: 100%;
+    height: 18px; 
+    background-size: 1000px 18px;
+    animation: animateFish2 6s linear infinite;
+}
+.ikan34{
+    opacity: .8;   
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 28px; 
+    background-size: 1000px 28px;
+    animation: animateFish2 7.5s linear infinite;
+}
+.ikan35{
+    opacity: .5;   
+    top: 76%;
+    left: 0;
+    width: 100%;
+    height: 28px; 
+    background-size: 1000px 28px;
+    animation: animateFish2 4s linear infinite;
+}
+@keyframes animateFish {
+    0% {
+        background-position-x: 0;
+        transform: translateY(0px);   
+    }
+    16%{
+        transform: translateY(-8px);
+    }
+    32%{
+        transform: translateY(0px);
+    }
+    48%{
+        transform: translateY(-13px);
+    }
+    64%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100% {
+        background-position-x: 1000px;
+        transform: translateY(0px);
+    }
+}
+@keyframes animateFish2 {
+    0% {
+        background-position-x: 0;
+        transform: translateY(0px) scaleX(-1)
+    }
+    16% {
+        transform: translateY(-8px) scaleX(-1);
+    }
+    32% {
+        transform: translateY(0px) scaleX(-1);
+    }
+    48% {
+        transform: translateY(-13px) scaleX(-1);
+    }
+    64% {
+        transform: translateY(0px) scaleX(-1);
+    }
+    80% {
+        transform: translateY(-10px) scaleX(-1);
+    }
+    100% {
+        background-position-x: 1000px; /* Move to the left */
+        transform: translateY(0px) scaleX(-1);
+    }
+}
