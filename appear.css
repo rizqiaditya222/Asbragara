@@ -9,8 +9,7 @@
         animation-range: entry -20% cover 50%;
     }
 
-    /* Right Appear Animation */
-    #contact, 
+    /* Right Appear Animation */ 
     #wayang {
         animation: appearRight linear;
         animation-timeline: view();

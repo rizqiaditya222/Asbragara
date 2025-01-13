@@ -104,9 +104,6 @@
         }
     }
     
-    #openNav{
-        background-color: #f2f2f2;
-    }
     </style>
 </head>
 <body class="font-poppins">
@@ -115,11 +112,30 @@
             <div class="flex-grow">
                 <a href=""><img class="w-36 sm:w-40 md:w-60 xl:w-72 2xl:w-80" src="logo/logo.webp" alt="logo"></a>
             </div>
-            <div class="flex w-1/2 md:w-1/3 items-center"> 
-                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-white ml-0 m-auto" href="#aboutus">About Us</a>
-                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-white m-auto" href="#programs">Programs</a>
-                <a class="hover:bg-white hover:text-blue rounded-3xl transition duration-20 ease-in-out px-1 py-2 font-semibold text-xs md:text-base text-center text-white mr-0 m-auto" href="#contact">Contact Us</a>
+
+            <div id="sidebar" class="hidden flex-col bg-black/30 backdrop-blur-md h-screen items-center fixed top-0 right-0 w-1/2" style="z-index: 999;"> 
+                <div class="flex justify-center w-full text-white hover:text-yellow mt-10">
+                    <p onclick="closeSidebar()" class="rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-yellow hover:cursor-pointer px-3 py-2 font-semibold text-3xl text-center">𐌗</p>
+                </div>
+                <div class="flex justify-center  w-full text-white hover:text-yellow py-3">
+                    <a onclick="closeSidebar()" class="rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-yellow px-3 py-2 font-semibold text-xs md:text-base text-center" href="#aboutus">About Us</a>
+                </div>
+                <div class="flex justify-center  w-full text-white hover:text-yellow py-3">
+                    <a onclick="closeSidebar()" class="rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-yellow px-3 py-2 font-semibold text-xs md:text-base text-center" href="#programs">Programs</a>
+                </div>
+                <div class="flex justify-center  w-full text-white hover:text-yellow py-3">
+                    <a onclick="closeSidebar()" class="rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-yellow px-3 py-2 font-semibold text-xs md:text-base text-center" href="#contact">Contact Us</a>
+                </div>
             </div>
+            
+            
+            <div id="navbar" class="flex md:w-1/2 md:min-w-80 items-end md:items-center" style="z-index: 998;"> 
+                <a class="hidden md:block hover:bg-black/30 hover:text-yellow rounded-3xl transition duration-300 ease-in-out px-3 py-2 font-semibold text-xs md:text-base text-center text-white m-auto" href="#aboutus">About Us</a>
+                <a class="hidden md:block hover:bg-black/30 hover:text-yellow rounded-3xl transition duration-300 ease-in-out px-3 py-2 font-semibold text-xs md:text-base text-center text-white m-auto" href="#programs">Programs</a>
+                <a class="hidden md:block hover:bg-black/30 hover:text-yellow rounded-3xl transition duration-300 ease-in-out px-3 py-2 font-semibold text-xs md:text-base text-center text-white m-auto" href="#contact">Contact Us</a>
+                <p onclick="openSidebar()" class="block md:hidden hover:bg-black/30 hover:text-yellow hover:cursor-pointer rounded-3xl transition duration-20 ease-in-out px-3 py-2 font-semibold text-base md:text-lg text-end text-white m-auto">☰</p>
+            </div>
+            
         </nav>
         <img class="w-9/12 absolute inset-0 m-auto" src="ASBRAGARA.svg" alt="">
         <div>
@@ -357,7 +373,7 @@
             <div class="wave waveBottom2"></div>
             <div class="wave waveBottom1"></div>
         </div>
-        <div id="contact" class="flex flex-col items-center lg:flex-row pt-44 pb-10 px-5 lg:px-40">
+        <div id="contact" class="flex flex-col items-center lg:flex-row pt-44 pb-10 px-5 lg:px-40 xl:px-56">
             <div class="lg:w-2/3 place-items-center lg:place-items-start">
                 <img class="w-80 min-w-20" src="text/Connect With Us.svg" alt="">
                 <p class="tracking-wider my-7 w-2/3 lg:w-4/5 text-sm lg:text-lg text-center lg:text-justify">Dapatkan informasi terbaru dari kami serta berbagai cerita seru nan menarik dari kami yak. Udah guys, bingung mau nambahin apa lagi pokoknya itu yak.</p>
@@ -382,12 +398,24 @@
                     </div>
                 </div>
             </div>
-            <div  class="w-1/3 h-auto" >
-                <img class="h-auto max-h-96" src="logo/fix.webp" alt="">
+            <div  class="w-1/3 h-auto flex justify-end" >
+                <img class="h-auto max-h-96 " src="logo/fix.webp" alt="">
             </div>
         </div>
     </section>
     
-    
+    <script>
+        const mySidebar = document.getElementById("sidebar");
+        const myNavbar = document.getElementById("navbar");
+
+        function openSidebar(){
+            mySidebar.classList.remove("hidden");
+            mySidebar.classList.add("flex");
+        }
+        function closeSidebar(){
+            mySidebar.classList.remove("flex");
+            mySidebar.classList.add("hidden");
+        }
+        </script>
 </body>
 </html>
