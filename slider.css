@@ -1,4 +1,3 @@
-
 .slider {
     height: 350px;
     margin: auto;
@@ -24,16 +23,7 @@
     z-index: 999;
 }
 
-
-.slide {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
-
+.slide,
 .slide2 {
     height: 300px;
     width: 300px;
@@ -43,29 +33,28 @@
     perspective: 100px;
 }
 
-.slide img {
+.slide img,
+.slide2 img {
     width: 100%;
     border-radius: 5%;
-    box-shadow: 0px 0px 10px #D1EDFF;
-    transition: transform .5s;
+    box-shadow: 0px 0px 15px #D1EDFF;
+    transition: transform .5s, box-shadow .5s;
     z-index: 999;
 }
 
-.slide img:hover {
-    transform: translateZ(15px);
-    z-index: 999;
-}
+.slide img:hover,
 .slide2 img:hover {
     transform: translateZ(15px);
+    box-shadow: 0px 0px 15px #FFEA00;
     z-index: 999;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(-0px);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-2700px); /* Adjust this to account for all images */
+        transform: translateX(-2700px);
     }
 }
 
@@ -74,6 +63,63 @@
         transform: translateX(-3600px);
     }
     100% {
-        transform: translateX(0px); 
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 250px;
+    }
+    
+    .slide-track {
+        width: calc(200px * 21);
+    }
+    
+    .slide-track2 {
+        width: calc(200px * 32);
+    }
+    
+    .slide,
+    .slide2 {
+        height: 200px;
+        width: 200px;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-1800px);
+        }
+    }
+    
+    @keyframes scroll2 {
+        0% {
+            transform: translateX(-2400px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .slider {
+        height: 350px;
+    }
+
+    .slide-track {
+        width: calc(300px * 21);
+    }
+
+    .slide-track2 {
+        width: calc(300px * 32);
+    }
+
+    .slide,
+    .slide2 {
+        height: 300px;
+        width: 300px;
     }
 }
